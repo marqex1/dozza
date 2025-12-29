@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dozza - عرض رأس السنة 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #ff4757; /* لون أحمر حيوي */
+            --secondary-color: #2f3542;
+            --bg-color: #ffeaa7; /* لون كريمي فاتح للحلويات */
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #ffeaa7 0%, #ff7675 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: var(--secondary-color);
+        }
+
+        .container {
+            background: var(--white);
+            width: 100%;
+            max-width: 500px;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 4px solid #fff;
+        }
+
+        /* اللوجو */
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px #ffeaa7;
+        }
+
+        .greeting {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .greeting span {
+            color: var(--primary-color);
+            font-weight: 900;
+        }
+
+        /* قسم الشروط */
+        .conditions-box {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 2px dashed var(--primary-color);
+        }
+
+        .condition {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .condition:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .condition h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+
+        .condition p {
+            font-size: 0.95rem;
+            color: #666;
+            background: #fff;
+            padding: 8px;
+            border-radius: 8px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            display: block;
+        }
+
+        /* النصوص التحفيزية */
+        .hype-text {
+            margin: 20px 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .hype-text strong {
+            color: var(--primary-color);
+        }
+
+        /* الأزرار */
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn i {
+            margin-left: 10px;
+            font-size: 1.4rem;
+        }
+
+        .facebook { background: #1877F2; }
+        .instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .tiktok { background: #000000; }
+
+        /* زينة رأس السنة */
+        .decoration {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-size: 4rem;
+            opacity: 0.2;
+            transform: rotate(-20deg);
+        }
+        .decoration-2 {
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            font-size: 4rem;
+            opacity: 0.2;
+            transform: rotate(20deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="decoration">🎉</div>
+        <div class="decoration-2">🍬</div>
+
+        <div class="logo">Dozza</div>
+        
+        <div class="greeting">
+            سنة جديدة سعيدة من Dozza <span>2026</span> 🎇
+        </div>
+
+        <div class="conditions-box">
+            <div class="condition">
+                <h3>1️⃣ تابعنا على: فيسبوك + إنستجرام + تيك توك</h3>
+                <span class="warning">📲 من غير فولو للتلاتة… مفيش عرض!</span>
+            </div>
+
+            <div class="condition">
+                <h3>2️⃣ لايك + كومنت على آخر 5 بوستات</h3>
+                <p>✍️ اكتب في الكومنت: "جاي من عرض رأس السنة"</p>
+            </div>
+
+            <div class="condition">
+                <h3>3️⃣ شير لآخر بوست</h3>
+                <p>📌 على حسابك أو ستوري (مع منشن للصفحة)</p>
+            </div>
+        </div>
+
+        <div class="hype-text">
+            الشروط واضحة… <strong>والخصم يستاهل 😎</strong><br>
+            اللي جاهز ينفذ… العرض مستنيه! 👇
+        </div>
+
+        <div class="social-buttons">
+            <a href="#" class="btn facebook" target="_blank">
+                <i class="fa-brands fa-facebook"></i> فيسبوك
+            </a>
+            <a href="#" class="btn instagram" target="_blank">
+                <i class="fa-brands fa-instagram"></i> إنستجرام
+            </a>
+            <a href="#" class="btn tiktok" target="_blank">
+                <i class="fa-brands fa-tiktok"></i> تيك توك
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
